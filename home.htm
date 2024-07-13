@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Novel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding-top: 60px; /* Adjusted for fixed header height */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f8bbd0; /* Light Pink Background */
+            color: #333; /* Dark Gray Text */
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #b35c7d; /* Dark Pink Header */
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .logo img {
+            width: 70px;
+            font-weight: bold;
+            text-shadow: 20px 20px black;
+            color: #fff; /* White Text */
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff; /* White Text */
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #d497af; /* Light Pink Hover */
+        }
+
+        .search-bar {
+            display: flex;
+        }
+
+        .search-bar input {
+            padding: 5px;
+            font-size: 16px;
+            border: 1px solid #993f63; /* Darker Pink Border */
+            border-radius: 4px 0 0 4px;
+        }
+
+        .search-bar button {
+            padding: 5px 10px;
+            font-size: 16px;
+            background-color: #993f63; /* Darker Pink Button */
+            color: #fff;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #d497af; /* Dark Pink Background */
+            color: #fff; /* White Text */
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 24px;
+        }
+
+        .hero button {
+            padding: 10px 20px;
+            font-size: 20px;
+            background-color: #b35c7d; /* Dark Pink Button */
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .hero button:hover {
+            background-color: #b61f5b; /* Light Pink Hover */
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 32px;
+            color: #993f63; /* Darker Pink Text */
+            border-bottom: 2px solid #993f63; /* Darker Pink Border */
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border: 1px solid #b35c7d; /* Light Pink Border */
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #993f63; /* Darker Pink Footer */
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #b35c7d; /* Light Pink Border */
+            color: #fff; /* White Text */
+        }
+
+        .footer-links {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: #fff; /* White Text */
+            margin: 0 10px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #d497af; /* Light Pink Hover */
+        }
+
+        .social-media a {
+            text-decoration: none;
+            color: #fff; /* White Text */
+            margin: 0 10px;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+
+        .social-media a:hover {
+            color: #d497af; /* Light Pink Hover */
+        }
+
+        .copyright {
+            font-size: 14px;
+            color: #f8bbd0; /* Light Pink Text */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="logo.png" alt=""></div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="genre.htm">Genre</a></li>
+                <li><a href="penulis.htm">Penulis</a></li>
+                <li><a href="cerita.htm">Cerita Terbaru</a></li>
+                <li><a href="login.htm">Login</a></li>
+                <li><a href="register.htm">Register</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Cari cerita...">
+            <button>Cari</button>
+        </div>
+    </header>
+    <section class="hero">
+        <h1>Selamat Datang di Website Novel</h1>
+        <p>Baca cerita menarik dari penulis berbakat</p>
+        <button>Mulai Membaca</button>
+    </section>
+    <section class="featured-stories">
+        <h2>Cerita Unggulan</h2>
+        <div class="card">Cerita Unggulan 1</div>
+        <div class="card">Cerita Unggulan 2</div>
+        <div class="card">Cerita Unggulan 3</div>
+    </section>
+    <section class="genres">
+        <h2>Kategori</h2>
+        <div class="card">Kategori 1</div>
+        <div class="card">Kategori 2</div>
+        <div class="card">Kategori 3</div>
+    </section>
+    <section class="latest-stories">
+        <h2>Cerita Terbaru</h2>
+        <div class="card">Cerita Terbaru 1</div>
+        <div class="card">Cerita Terbaru 2</div>
+        <div class="card">Cerita Terbaru 3</div>
+    </section>
+    <section class="popular-stories">
+        <h2>Cerita Populer</h2>
+        <div class="card">Cerita Populer 1</div>
+        <div class="card">Cerita Populer 2</div>
+        <div class="card">Cerita Populer 3</div>
+    </section>
+    <section class="featured-authors">
+        <h2>Penulis Unggulan</h2>
+        <div class="card">Penulis Unggulan 1</div>
+        <div class="card">Penulis Unggulan 2</div>
+        <div class="card">Penulis Unggulan 3</div>
+    </section>
+    <footer>
+        <div class="footer-links">
+            <a href="#">Tentang Kami</a>
+            <a href="#">Kebijakan Privasi</a>
+            <a href="#">Syarat dan Ketentuan</a>
+            <a href="#">Kontak</a>
+        </div>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+        <div class="copyright">
+            &copy; 2024 Website Novel. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
